@@ -6,13 +6,15 @@
     <title>document</title>
 </head>
 <body>
-    
+    <header>
+        oi
+    </header>
 </body>
 <script>
 
     //ex1
 
-    let novo = document.querySelector('body');
+    let novo = document.querySelector('header');
     novo.innerHTML='<h1>Titulo do site</h1>';
 
     let sub = document.createElement('h2');
@@ -20,7 +22,7 @@
     document.body.appendChild(sub);
 
     let p = document.createElement('p')
-    p.innerText='Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.'
+    p.innerText='Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.'
     document.body.appendChild(p)
 
     //ex2
@@ -30,16 +32,29 @@
     document.body.appendChild(novotexto);
 
     let fonte = document.querySelector('pe');
-    fonte.style.fontSize='12px';
+    fonte.style.fontSize='13px';
 
     //ex3 - revisar
 
-    let novotitulo = document.querySelector('h1');
-    novotitulo.innerHTML='oi, oi, oi';
+    let oioioi = document.querySelector('header');
+    oioioi.innerHTML='<h1><u>oi, oi, oi</u></oi>';
 
-    let novosubtitulo = document.querySelector('h2');
-    novosubtitulo = document.createElement('h3');
-    novosubtitulo.innerHTML='ieh';
+    let novosub = document.createElement('subtitulo');
+    document.querySelector('p');
+    novosub.innerHTML='<h2>subtítulo 1</h2>';
+    p.appendChild(novosub);
+
+    //ex4 
+
+    let robo = document.createElement('p');
+    document.querySelector('body');
+
+    robo.innerHTML='<img src="https://robohash.org/<string:abcde>">';
+    document.body.appendChild(robo);
+
 
 </script>
 </html>
+
+
+robo.src = "https://robohash.org/"+valor;
